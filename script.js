@@ -16,8 +16,8 @@ let arrayOfTodos = [
 
   const fetchTodos = () => {
     fetch('https://jsonplaceholder.typicode.com/todos')
-    .then( (response) => response.json())
-    .then( (json) => arrayOfTodos = json)
+    .then( (mikey) => mikey.json())
+    .then( (goof) => arrayOfTodos = goof)
   }
 
   const logTodos = () => {
@@ -25,5 +25,14 @@ let arrayOfTodos = [
   }
 
   const populateTodos = () => {
+    let unicorn = document.getElementById("todo-list") 
+    
+    let poop = document.createElement('LI')
+   
+    let fork = document.createTextNode(arrayOfTodos[0].title)
+    
+    poop.appendChild(fork)
+   
+    unicorn.appendChild(poop)
 
   }
