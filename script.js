@@ -29,14 +29,14 @@ let arrayOfTodos = [
     let list = document.getElementById("todo-list") 
     
        
-    for (let i=0; i < arraryOfTodos.length; i++){
+    for (let i=0; i < arrayOfTodos.length; i++){
        
-      let newLi = document.createElement('LI') 
+       let newLi = document.createElement('LI') 
        let newH1 = document.createElement('H1') 
        let newH2 = document.createElement('H2') 
        let newH3 = document.createElement('H3') 
        let newH4 = document.createElement('H4')
-       
+                  
        let userId = document.createTextNode(arrayOfTodos[i].userId)
        newH1.appendChild(userId)
        
@@ -51,14 +51,13 @@ let arrayOfTodos = [
        newH4.appendChild(completed)
        
        list.appendChild(newLi)
-       newLi.appendChild(H1)
-       newLi.appendChild(H2)
-       newLi.appendChild(H3)
-       newLi.appendChild(H4)
+       newLi.appendChild(newH1)
+       newLi.appendChild(newH2)
+       newLi.appendChild(newH3)
+       newLi.appendChild(newH4)
        
      
-       let elementcolor = "red"
-       completed.stly.color = elementColor
+       
 
 
 
